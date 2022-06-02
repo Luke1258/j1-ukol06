@@ -63,12 +63,14 @@ public class Aplikace extends JFrame {
         vypocitatButton.addActionListener(this::handleVypocitat);
 
         pocetHlavField = new JTextField();
+        pocetHlavField.setEditable(false);
         pocetHlavLabel = new JLabel("Pocet Hlav");
         pocetHlavLabel.setLabelFor(pocetHlavField);
         add(pocetHlavLabel);
         add(pocetHlavField, "span");
 
         pocetNohField = new JTextField();
+        pocetNohField.setEditable(false);
         pocetNohLabel = new JLabel("Pocet Noh");
         pocetNohLabel.setLabelFor(pocetNohField);
         add(pocetNohLabel);
